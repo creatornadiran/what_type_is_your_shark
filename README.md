@@ -1,16 +1,18 @@
-# what_type_is_your_shark
+<div align="center"> 
+  
+## What type is your shark?
+  
+ Shark classification application I made using TensorflowLite and Flutter. I developed this app for the SharkHacks3 hackathon. Besides the classification, there are fun fact cards about sharks and developer information.
+  
+</div>
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p float="left">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<img src=https://github.com/creatornadiran/what_type_is_your_shark/blob/master/screenshots/ss1.jpeg width="20%">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<img src=https://github.com/creatornadiran/what_type_is_your_shark/blob/master/screenshots/ss2.jpeg width="20%">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<img src=https://github.com/creatornadiran/what_type_is_your_shark/blob/master/screenshots/ss3.jpeg width="20%">
+ </p>
