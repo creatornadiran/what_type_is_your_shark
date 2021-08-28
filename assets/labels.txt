@@ -10,5 +10,5 @@
 9 thresher
 10 tiger
 11 whale
-12 white
+12 great_white
 13 white_tip
