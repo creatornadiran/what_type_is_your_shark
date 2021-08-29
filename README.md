@@ -16,3 +16,7 @@
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <img src=https://github.com/creatornadiran/what_type_is_your_shark/blob/master/screenshots/ss3.jpeg width="20%">
  </p>
+
+
+## How Can I try?
+You can try by downloading the file inside the APK folder to your android device.
