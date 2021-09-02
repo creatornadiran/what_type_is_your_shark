@@ -1,7 +1,7 @@
 <div align="center"> 
   
-## What type is your shark?
-  
+# What type is your shark?
+## Every person may wonder what type of shark in their home 🤷‍♂️
  Shark classification application I made using TensorflowLite and Flutter. I developed this app for the SharkHacks3 hackathon. Besides the classification, there are fun fact cards about sharks and developer information.
   
 </div>
