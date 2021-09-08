@@ -1,14 +1,14 @@
-0 basking
-1 blacktip
-2 blue
-3 bull
-4 hammerhead
-5 lemon
-6 mako
-7 nurse
-8 sand_tiger
-9 thresher
-10 tiger
-11 whale
-12 great_white
-13 white_tip
+basking
+blacktip
+blue
+bull
+hammerhead
+lemon
+mako
+nurse
+sandtiger
+thresher
+tiger
+whale
+white
+whitetip

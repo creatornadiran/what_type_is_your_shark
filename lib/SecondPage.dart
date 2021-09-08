@@ -29,6 +29,7 @@ class _HomePageState extends State<classifyPage> {
 
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -42,12 +43,13 @@ class _HomePageState extends State<classifyPage> {
               child: CircularProgressIndicator(),
             )
           : Container(
+              alignment: Alignment.center,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    height: 400,
-                    width: 400,
+                    height: 0.5 * height,
+                    width: 0.5 * height,
                     margin: EdgeInsets.all(25),
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
@@ -65,7 +67,7 @@ class _HomePageState extends State<classifyPage> {
                         : Image.file(_image!),
                   ),
                   SizedBox(
-                    height: 50,
+                    height: 0.05 * height,
                   ),
                   Container(
                     height: 50,
@@ -77,7 +79,7 @@ class _HomePageState extends State<classifyPage> {
                     child: _output != null && _output!.length > 0
                         ? Center(
                             child: Text(
-                              "${(_output![0]["label"]).split(" ")[1]}",
+                              "${(_output![0]["label"])}",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontSize: 20, fontFamily: "FredokaOne"),
@@ -134,19 +136,17 @@ class _HomePageState extends State<classifyPage> {
       _isLoading = true;
       _image = File(image.path);
     });
-    print("Aaaaa");
-    print(File(image.path));
     classifyImage(image);
   }
 
   classifyImage(XFile image) async {
     var output = await Tflite.runModelOnImage(
       path: image.path,
-      numResults: 2,
+      numResults: 14,
       imageMean: 127.5,
       imageStd: 127.5,
-      threshold: 0.5,
     );
+    print(output);
     setState(() {
       _isLoading = false;
       _output = output;
@@ -154,8 +154,9 @@ class _HomePageState extends State<classifyPage> {
   }
 
   loadModel() async {
-    await Tflite.loadModel(
-        model: "assets/vww_96_grayscale_quantized.tflite",
-        labels: "assets/labels.txt");
+    String a;
+    a = (await Tflite.loadModel(
+        model: "assets/model_fp16.tflite", labels: "assets/labels.txt"))!;
+    print(a);
   }
 }

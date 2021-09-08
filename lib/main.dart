@@ -15,6 +15,7 @@ class homePage extends StatelessWidget {
   final facts = funFacts();
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
     return MaterialApp(
       home: Scaffold(
         body: Container(
@@ -23,11 +24,11 @@ class homePage extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.all(75),
+                margin: EdgeInsets.all(0.075 * height),
                 child: Image(
                   image: AssetImage("assets/shark.png"),
-                  height: 250,
-                  width: 250,
+                  height: 0.4 * height,
+                  width: 0.4 * height,
                 ),
               ),
               FloatingActionButton.extended(
@@ -45,7 +46,7 @@ class homePage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 50,
+                height: 0.05 * height,
               ),
               FloatingActionButton.extended(
                 onPressed: () {
@@ -86,7 +87,7 @@ class homePage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 50,
+                height: 0.05 * height,
               ),
               FloatingActionButton.extended(
                 onPressed: () {
@@ -123,9 +124,9 @@ class homePage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 100,
+                height: 0.1 * height,
               ),
-              Text("V1.0"),
+              Text("V1.1.0"),
             ],
           ),
         ),

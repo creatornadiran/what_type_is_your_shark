@@ -8,22 +8,25 @@ class MyIndormation extends StatelessWidget {
   final _urlGithub = 'https://github.com/creatornadiran';
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
     return Column(
       children: [
         Image(
           image: AssetImage("assets/me.jpg"),
+          height: 0.3 * height,
+          width: 0.3 * height,
         ),
         SizedBox(
-          height: 15,
+          height: 0.01 * height,
         ),
         Text(
             "Hi, my name is Nadirhan and I'm a 2nd year Computer Engineering student in Turkey. I am interested in machine learning and mobile development."),
         SizedBox(
-          height: 15,
+          height: 0.01 * height,
         ),
         Text("To contact me:"),
         SizedBox(
-          height: 15,
+          height: 0.01 * height,
         ),
         FloatingActionButton.extended(
           onPressed: () {
@@ -33,7 +36,7 @@ class MyIndormation extends StatelessWidget {
           icon: Icon(CustomIcons.twitter),
         ),
         SizedBox(
-          height: 15,
+          height: 0.01 * height,
         ),
         FloatingActionButton.extended(
           onPressed: () {
